@@ -5,7 +5,8 @@ Owen Williams
 1. Introduction
 
 Kexcalc is a Matlab function written to analyze NMR data from a ZZ-exchange experiment. It uses time series data for the
-auto and cross peaks and calculates the exchange rate that produces the best fit to the experimental data.
+auto and cross peaks and calculates the exchange rate that produces the best fit to the experimental data. The fitting
+equations were taken from Palmer et al. (1) and Kleckner and Foster (2).
 
 2. Requirements
 
@@ -14,7 +15,7 @@ any OS-specific functions; however, it has only been tested on Windows 7 (as tha
 
 3. Installation
 
-Download kexcalc.m to a directory on your Matlab path.
+Download kexcalc.m and place it in a directory on your Matlab path.
 
 4. Usage
 
@@ -52,7 +53,15 @@ b. results:
   results.dataIAB: normalized intensites for cross peak AB
   results.dataIBA: normalized intensites for cross peak BA
   results.residual: Sum over all time points of the squared difference between the experimental data and the fit.
+
+6. References
+
+(1) Palmer, A. G.; Kroenke, C. D.; Loria, J. P. "Nuclear magnetic resonance methods for quantifying 
+microsecond-to-millisecond motions in biological molecules." Meth. Enzymology. 2001, 339, 204-238.
+
+(2) Kleckner, I. R.; Foster, M. P. "An introduction to NMR-based approaches for measuring protein dynamics." 
+Biochimica et Biophysica Acta. 2011, 1814, 942-968.
   
-6. Contact Information
+7. Contact Information
 
 Questions, comments, or suggestions? Feel free to email me at olwilliams256@gmail.com.
